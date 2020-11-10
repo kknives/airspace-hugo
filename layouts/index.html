@@ -56,10 +56,10 @@
 {{ if $data.homepage.portfolio.enable }}
 {{ with $data.homepage.portfolio }}
 <!-- portfolio -->
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
+<section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}'); background-position: left bottom; ">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-6">
+      <div class="col-md-6">
         <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
         {{ .content | markdownify }}
         {{ if .button.enable }}
